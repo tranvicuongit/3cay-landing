@@ -1,0 +1,18 @@
+.logo{
+    margin-top: 1%;
+    position: relative;
+    width: 40%;
+    z-index: 0;
+    animation: zoomTo 9s infinite;
+    margin-right: 5%;
+    &:hover{
+        transform: scale(1.1);
+    }
+}
+
+// .phone, .tablet{
+//     .logo{
+//         width: 100%;
+//         margin-top: 4%;
+//     }
+// }

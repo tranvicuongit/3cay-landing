@@ -1,0 +1,35 @@
+#banca-wrapper {
+    width: 100%;
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+    position: relative;
+    height: 100vh;
+}
+
+body {
+    z-index: 0;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    min-height: 100vh;
+    overflow-x: hidden;
+    background: url(#{$url-assets}/images/bg/bg.jpg) center center no-repeat;
+    background-size: cover;
+}
+
+// .phone,
+// .tablet {
+//     body {
+//         background: url(#{$url-assets}/images/bg/bg-mb.jpg) center center no-repeat;
+//         background-size: cover;
+//     }
+// }
+@media screen and (orientation: landscape) {
+    .phone, .tablet {
+        body {
+            //background: url(#{$url-assets}/images/bg/bg-landscape.jpg) center center no-repeat !important;
+            //background-size: cover!important;
+        }
+    }
+}

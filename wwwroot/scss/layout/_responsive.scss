@@ -1,0 +1,1352 @@
+@media only screen and (max-width: 319px) {
+    body {
+        background: url(#{$url-assets}/images/bg/bg-mb.jpg) center center no-repeat !important;
+        background-size: cover !important;
+    }
+    .logo {
+        width: 100%;
+        margin-top: 8%;
+    }
+    .button-download {
+        img {
+            width: 40%;
+            margin-top: -50px;
+            transition: 0.45s all ease-in;
+        }
+        @include element("ios") {
+            img {
+                float: right!important;
+                margin-right: 4%;
+                margin-top: -70px;
+            }
+            @include modifier("light") {
+                display: none;
+            }
+        }
+        @include element("android") {
+            img {
+                float: left!important;
+                margin-left: 4%;
+            }
+            @include modifier("light") {
+                display: none;
+            }
+        }
+    }
+    .coin {
+        @include m("wrapper") {
+            position: absolute;
+            height: 40px;
+            width: auto;
+            z-index: 2;
+            @include element("001") {
+                left: 10%;
+                top: 5%;
+                animation: coin 3s infinite;
+            }
+            @include element("002") {
+                right: 20%;
+                top: 10%;
+                animation: coin 3s infinite;
+            }
+            @include element("002") {
+                right: 35%;
+                top: 10%;
+                animation: coin 3s infinite;
+            }
+            @include element("003") {
+                right: 15%;
+                top: -5%;
+                animation: coin 3s infinite;
+            }
+            @include element("004") {
+                left: 10%;
+                top: 25%;
+                height: 30px;
+                width: auto;
+                animation: coin 3s infinite;
+            }
+            @include element("005") {
+                right: 40%;
+                bottom: 1%;
+                height: 30px;
+                width: auto;
+                animation: coin 3s infinite;
+            }
+        }
+    }
+    .fish {
+        @include element("fish") {
+            @include modifier("01") {
+                right: 10%;
+                z-index: -1;
+                width: 80px;
+            }
+            @include modifier("02") {
+                bottom: 35%;
+                left: 2%;
+                z-index: -1;
+                width: 60px;
+            }
+        }
+        @include element("crab") {
+            bottom: -3%;
+            left: 10%;
+            z-index: -1;
+            width: 80px;
+            position: absolute;
+        }
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 479px) {
+    body {
+        background: url(#{$url-assets}/images/bg/bg-mb.jpg) center center no-repeat !important;
+        background-size: cover !important;
+    }
+    .logo {
+        width: 100%;
+        margin-top: 8%;
+    }
+    .button-download {
+        img {
+            width: 40%;
+            margin-top: -60px;
+            transition: 0.45s all ease-in;
+        }
+        @include element("ios") {
+            img {
+                float: right!important;
+                margin-right: 4%;
+                margin-top: -110px;
+            }
+            @include modifier("light") {
+                display: none;
+            }
+        }
+        @include element("android") {
+            img {
+                float: left!important;
+                margin-left: 4%;
+            }
+            @include modifier("light") {
+                display: none;
+            }
+        }
+    }
+    .coin {
+        @include m("wrapper") {
+            position: absolute;
+            height: 40px;
+            width: auto;
+            z-index: 2;
+            @include element("001") {
+                left: 10%;
+                top: 5%;
+                animation: coin 3s infinite;
+            }
+            @include element("002") {
+                right: 20%;
+                top: 10%;
+                animation: coin 3s infinite;
+            }
+            @include element("002") {
+                right: 35%;
+                top: 10%;
+                animation: coin 3s infinite;
+            }
+            @include element("003") {
+                right: 15%;
+                top: -5%;
+                animation: coin 3s infinite;
+            }
+            @include element("004") {
+                left: 10%;
+                top: 25%;
+                height: 30px;
+                width: auto;
+                animation: coin 3s infinite;
+            }
+            @include element("005") {
+                right: 40%;
+                bottom: 1%;
+                height: 30px;
+                width: auto;
+                animation: coin 3s infinite;
+            }
+        }
+    }
+    .fish {
+        @include element("fish") {
+            @include modifier("01") {
+                right: 10%;
+                z-index: -1;
+                width: 80px;
+            }
+            @include modifier("02") {
+                bottom: 35%;
+                left: 2%;
+                z-index: -1;
+                width: 60px;
+            }
+        }
+        @include element("crab") {
+            bottom: -3%;
+            left: 10%;
+            z-index: -1;
+            width: 80px;
+            position: absolute;
+        }
+    }
+}
+
+//////// btn ios
+@media screen and (min-width: 320px) and (max-width: 334px) {
+    .button-download {        
+        @include element("ios") {
+            img {
+                margin-top: -75px;
+            }
+        }
+        
+    }   
+}
+@media screen and (min-width: 335px) and (max-width: 370px) {
+    .button-download {        
+        @include element("ios") {
+            img {
+                margin-top: -80px;
+            }
+        }
+        
+    }   
+}
+@media screen and (min-width: 371px) and (max-width: 394px) {
+    .button-download {        
+        @include element("ios") {
+            img {
+                margin-top: -85px;
+            }
+        }
+        
+    }   
+}
+@media screen and (min-width: 395px) and (max-width: 425px) {
+    .button-download {        
+        @include element("ios") {
+            img {
+                margin-top: -90px;
+            }
+        }
+        
+    }   
+}
+@media screen and (min-width: 426px) and (max-width: 464px) {
+    .button-download {        
+        @include element("ios") {
+            img {
+                margin-top: -100px;
+            }
+        }
+        
+    }   
+}
+@media screen and (min-width: 465px) and (max-width: 479px) {
+    .button-download {        
+        @include element("ios") {
+            img {
+                margin-top: -110px;
+            }
+        }
+        
+    }   
+}
+//////// end of btn ios
+
+@media screen and (min-width: 480px) and (max-width: 575px) {
+    body {
+        background: url(#{$url-assets}/images/bg/bg-mb.jpg) center center no-repeat !important;
+        background-size: cover !important;
+    }
+    .logo {
+        width: 95%;
+        margin-top: 4%;
+    }
+    .button-download {
+        img {
+            width: 35%;
+            margin-top: -100px;
+            transition: 0.45s all ease-in;
+        }
+        @include element("ios") {
+            img {
+                float: right!important;
+                margin-right: 10%;
+                margin-top: -120px;
+            }
+            @include modifier("light") {
+                margin-left: 55%;
+                margin-top: -120px;
+                height: 55px;
+                width: 55px;
+                opacity: 1;
+                display: none;
+            }
+            &:hover,
+            &:active,
+            &:focus {
+                .button-download__ios--light {
+                    opacity: 1;
+                    margin-left: 57%;
+                }
+            }
+        }
+        @include element("android") {
+            img {
+                float: left!important;
+                margin-left: 10%;
+            }
+            @include modifier("light") {
+                margin-left: 30%;
+                margin-top: -55spx;
+                height: 45px;
+                width: 45px;
+                opacity: 1;
+                display: none;
+            }
+            &:hover,
+            &:active,
+            &:focus {
+                .button-download__android--light {
+                    opacity: 1;
+                    margin-left: 32%;
+                }
+            }
+        }
+    }
+    .coin {
+        @include m("wrapper") {
+            position: absolute;
+            height: 60px;
+            width: auto;
+            z-index: 2;
+            @include element("001") {
+                left: 10%;
+                top: 5%;
+                animation: coin 3s infinite;
+            }
+            @include element("002") {
+                right: 20%;
+                top: 10%;
+                animation: coin 3s infinite;
+            }
+            @include element("002") {
+                right: 35%;
+                top: 10%;
+                animation: coin 3s infinite;
+            }
+            @include element("003") {
+                right: 15%;
+                top: -5%;
+                animation: coin 3s infinite;
+            }
+            @include element("004") {
+                left: 10%;
+                top: 35%;
+                height: 50px;
+                width: auto;
+                animation: coin 3s infinite;
+            }
+            @include element("005") {
+                right: 40%;
+                bottom: 1%;
+                height: 50px;
+                width: auto;
+                animation: coin 3s infinite;
+            }
+        }
+    }
+    .fish {
+        @include element("fish") {
+            @include modifier("01") {
+                right: 10%;
+                z-index: -1;
+                width: 160px;
+            }
+            @include modifier("02") {
+                bottom: 25%;
+                left: 2%;
+                z-index: -1;
+                width: 160px;
+            }
+        }
+        @include element("crab") {
+            bottom: -3%;
+            left: 10%;
+            z-index: -1;
+            width: 160px;
+            position: absolute;
+        }
+    }
+}
+
+@media screen and (min-width: 576px) and (max-width: 639px) {
+    body {
+        background: url(#{$url-assets}/images/bg/bg-mb.jpg) center center no-repeat !important;
+        background-size: cover !important;
+    }
+    .logo {
+        width: 95%;
+        margin-top: 1%;
+    }
+    .button-download {
+        img {
+            width: 100%;
+            margin-top: -100px;
+            transition: 0.45s all ease-in;
+        }
+        @include element("ios") {
+            @include modifier("light") {
+                margin-left: 15%;
+                margin-top: -120px;
+                height: 55px;
+                width: 55px;
+                opacity: 1;
+            }
+            &:hover,
+            &:active,
+            &:focus {
+                .button-download__ios--light {
+                    opacity: 1;
+                    margin-left: 20%;
+                }
+            }
+        }
+        @include element("android") {
+            @include modifier("light") {
+                margin-left: 50%;
+                margin-top: -50px;
+                height: 55px;
+                width: 55px;
+                opacity: 1;
+            }
+            &:hover,
+            &:active,
+            &:focus {
+                .button-download__android--light {
+                    opacity: 1;
+                    margin-left: 45%;
+                }
+            }
+        }
+    }
+    .coin {
+        @include m("wrapper") {
+            position: absolute;
+            height: 60px;
+            width: auto;
+            z-index: 2;
+            @include element("001") {
+                left: 10%;
+                top: 5%;
+                animation: coin 3s infinite;
+            }
+            @include element("002") {
+                right: 20%;
+                top: 10%;
+                animation: coin 3s infinite;
+            }
+            @include element("002") {
+                right: 35%;
+                top: 10%;
+                animation: coin 3s infinite;
+            }
+            @include element("003") {
+                right: 15%;
+                top: -5%;
+                animation: coin 3s infinite;
+            }
+            @include element("004") {
+                left: 10%;
+                top: 35%;
+                height: 50px;
+                width: auto;
+                animation: coin 3s infinite;
+            }
+            @include element("005") {
+                right: 40%;
+                bottom: 1%;
+                height: 50px;
+                width: auto;
+                animation: coin 3s infinite;
+            }
+        }
+    }
+    .fish {
+        @include element("fish") {
+            @include modifier("01") {
+                right: 10%;
+                z-index: -1;
+                width: 160px;
+            }
+            @include modifier("02") {
+                bottom: 25%;
+                left: 2%;
+                z-index: -1;
+                width: 160px;
+            }
+        }
+        @include element("crab") {
+            bottom: -3%;
+            left: 10%;
+            z-index: -1;
+            width: 160px;
+            position: absolute;
+        }
+    }
+}
+
+@media screen and (min-width: 640px) and (max-width: 767px) {
+    body {
+        background: url(#{$url-assets}/images/bg/bg-mb.jpg) center center no-repeat !important;
+        background-size: cover !important;
+    }
+    .logo {
+        width: 85%;
+        margin-top: 1%;
+    }
+    .button-download {
+        img {
+            width: 100%;
+            margin-top: -100px;
+            transition: 0.45s all ease-in;
+        }
+        @include element("ios") {
+            @include modifier("light") {
+                margin-left: 15%;
+                margin-top: -120px;
+                height: 55px;
+                width: 55px;
+                opacity: 1;
+            }
+            &:hover,
+            &:active,
+            &:focus {
+                .button-download__ios--light {
+                    opacity: 1;
+                    margin-left: 20%;
+                }
+            }
+        }
+        @include element("android") {
+            @include modifier("light") {
+                margin-left: 50%;
+                margin-top: -50px;
+                height: 55px;
+                width: 55px;
+                opacity: 1;
+            }
+            &:hover,
+            &:active,
+            &:focus {
+                .button-download__android--light {
+                    opacity: 1;
+                    margin-left: 45%;
+                }
+            }
+        }
+    }
+    .coin {
+        @include m("wrapper") {
+            position: absolute;
+            height: 60px;
+            width: auto;
+            z-index: 2;
+            @include element("001") {
+                left: 10%;
+                top: 5%;
+                animation: coin 3s infinite;
+            }
+            @include element("002") {
+                right: 20%;
+                top: 10%;
+                animation: coin 3s infinite;
+            }
+            @include element("002") {
+                right: 35%;
+                top: 10%;
+                animation: coin 3s infinite;
+            }
+            @include element("003") {
+                right: 15%;
+                top: -5%;
+                animation: coin 3s infinite;
+            }
+            @include element("004") {
+                left: 10%;
+                top: 35%;
+                height: 50px;
+                width: auto;
+                animation: coin 3s infinite;
+            }
+            @include element("005") {
+                right: 40%;
+                bottom: 1%;
+                height: 50px;
+                width: auto;
+                animation: coin 3s infinite;
+            }
+        }
+    }
+    .fish {
+        @include element("fish") {
+            @include modifier("01") {
+                right: 10%;
+                z-index: -1;
+                width: 160px;
+            }
+            @include modifier("02") {
+                bottom: 25%;
+                left: 2%;
+                z-index: -1;
+                width: 160px;
+            }
+        }
+        @include element("crab") {
+            bottom: -3%;
+            left: 10%;
+            z-index: -1;
+            width: 160px;
+            position: absolute;
+        }
+    }
+}
+
+@media screen and (max-width: 999px) and (min-width: 768px) {
+    body {
+        background: url(#{$url-assets}/images/bg/bg.jpg) center center no-repeat !important;
+        background-size: cover !important;
+    }
+    .logo {
+        width: 65%;
+        margin-top: 1%;
+    }
+    .button-download {
+        img {
+            width: 90%;
+            margin-top: -100px;
+            transition: 0.45s all ease-in;
+        }
+        @include element("ios") {
+            @include modifier("light") {
+                margin-left: -70%;
+                margin-top: -125px;
+                height: 70px;
+                width: 70px;
+                opacity: 1;
+            }
+            &:hover,
+            &:active,
+            &:focus {
+                .button-download__ios--light {
+                    opacity: 1;
+                    margin-left: -65%;
+                }
+            }
+        }
+        @include element("android") {
+            @include modifier("light") {
+                margin-left: 55%;
+                margin-top: -35px;
+                height: 70px;
+                width: 70px;
+                opacity: 1;
+            }
+            &:hover,
+            &:active,
+            &:focus {
+                .button-download__android--light {
+                    opacity: 1;
+                    margin-left: 60%;
+                }
+            }
+        }
+    }
+    .coin {
+        @include m("wrapper") {
+            position: absolute;
+            height: 90px;
+            width: auto;
+            z-index: 2;
+            @include element("001") {
+                left: 20%;
+                top: 5%;
+                animation: coin 3s infinite;
+            }
+            @include element("002") {
+                right: 35%;
+                top: 10%;
+                animation: coin 3s infinite;
+            }
+            @include element("002") {
+                right: 35%;
+                top: 10%;
+                animation: coin 3s infinite;
+            }
+            @include element("003") {
+                right: 15%;
+                top: -5%;
+                animation: coin 3s infinite;
+            }
+            @include element("004") {
+                left: 20%;
+                top: 45%;
+                height: 60px;
+                width: auto;
+                animation: coin 3s infinite;
+            }
+            @include element("005") {
+                right: 40%;
+                bottom: 5%;
+                height: 80px;
+                width: auto;
+                animation: coin 3s infinite;
+            }
+        }
+    }
+    .fish {
+        @include element("fish") {
+            @include modifier("01") {
+                right: 5%;
+                z-index: -1;
+                width: 220px;
+            }
+            @include modifier("02") {
+                bottom: 25%;
+                left: 7%;
+                z-index: -1;
+                width: 190px;
+            }
+        }
+        @include element("crab") {
+            bottom: -3%;
+            left: 5%;
+            z-index: -1;
+            width: 220px;
+            position: absolute;
+        }
+    }
+}
+
+@media screen and (max-width: 1365px) and (min-width: 1000px) {
+    body {
+        background: url(#{$url-assets}/images/bg/bg.jpg) center center no-repeat !important;
+        background-size: cover !important;
+    }
+    .logo {
+        width: 60%;
+        margin-top: 1%;
+    }
+    .button-download {
+        img {
+            width: 70%;
+            margin-top: -100px;
+            transition: 0.45s all ease-in;
+        }
+        @include element("ios") {
+            @include modifier("light") {
+                margin-left: -55%;
+                margin-top: -125px;
+                height: 70px;
+                width: 70px;
+                opacity: 1;
+            }
+            &:hover,
+            &:active,
+            &:focus {
+                .button-download__ios--light {
+                    opacity: 1;
+                    margin-left: -52%;
+                }
+            }
+        }
+        @include element("android") {
+            @include modifier("light") {
+                margin-left: 65%;
+                margin-top: -35px;
+                height: 70px;
+                width: 70px;
+                opacity: 1;
+            }
+            &:hover,
+            &:active,
+            &:focus {
+                .button-download__android--light {
+                    opacity: 1;
+                    margin-left: 70%;
+                }
+            }
+        }
+    }
+    .coin {
+        @include m("wrapper") {
+            position: absolute;
+            height: 90px;
+            width: auto;
+            z-index: 2;
+            @include element("001") {
+                left: 20%;
+                top: 5%;
+                animation: coin 3s infinite;
+            }
+            @include element("002") {
+                right: 35%;
+                top: 10%;
+                animation: coin 3s infinite;
+            }
+            @include element("002") {
+                right: 35%;
+                top: 10%;
+                animation: coin 3s infinite;
+            }
+            @include element("003") {
+                right: 15%;
+                top: -5%;
+                animation: coin 3s infinite;
+            }
+            @include element("004") {
+                left: 20%;
+                top: 45%;
+                height: 60px;
+                width: auto;
+                animation: coin 3s infinite;
+            }
+            @include element("005") {
+                right: 40%;
+                bottom: 5%;
+                height: 80px;
+                width: auto;
+                animation: coin 3s infinite;
+            }
+        }
+    }
+    .fish {
+        @include element("fish") {
+            @include modifier("01") {
+                right: 5%;
+                z-index: -1;
+                width: 220px;
+            }
+            @include modifier("02") {
+                bottom: 25%;
+                left: 7%;
+                z-index: -1;
+                width: 190px;
+            }
+        }
+        @include element("crab") {
+            bottom: -3%;
+            left: 5%;
+            z-index: -1;
+            width: 220px;
+            position: absolute;
+        }
+    }
+}
+
+@media screen and (max-width: 1599px) and (min-width: 1366px) {
+    body {
+        background: url(#{$url-assets}/images/bg/bg.jpg) center center no-repeat !important;
+        background-size: cover !important;
+    }
+    .logo {
+        width: 60%;
+        margin-top: 1%;
+    }
+    .button-download {
+        img {
+            width: 80%;
+            margin-top: -190px;
+            transition: 0.45s all ease-in;
+        }
+        @include element("ios") {
+            @include modifier("light") {
+                margin-left: 12%;
+                margin-top: -220px;
+                height: 85px;
+                width: 85px;
+                opacity: 1;
+            }
+            &:hover,
+            &:active,
+            &:focus {
+                .button-download__ios--light {
+                    opacity: 1;
+                    margin-left: 17%;
+                }
+            }
+        }
+        @include element("android") {
+            @include modifier("light") {
+                margin-left: 65%;
+                margin-top: -85px;
+                height: 70px;
+                width: 70px;
+                opacity: 1;
+            }
+            &:hover,
+            &:active,
+            &:focus {
+                .button-download__android--light {
+                    opacity: 1;
+                    margin-left: 60%;
+                }
+            }
+        }
+    }
+    .coin {
+        @include m("wrapper") {
+            position: absolute;
+            height: 90px;
+            width: auto;
+            z-index: 2;
+            @include element("001") {
+                left: 20%;
+                top: 5%;
+                animation: coin 3s infinite;
+            }
+            @include element("002") {
+                right: 35%;
+                top: 10%;
+                animation: coin 3s infinite;
+            }
+            @include element("002") {
+                right: 35%;
+                top: 10%;
+                animation: coin 3s infinite;
+            }
+            @include element("003") {
+                right: 15%;
+                top: -5%;
+                animation: coin 3s infinite;
+            }
+            @include element("004") {
+                left: 20%;
+                top: 45%;
+                height: 60px;
+                width: auto;
+                animation: coin 3s infinite;
+            }
+            @include element("005") {
+                right: 40%;
+                bottom: 5%;
+                height: 80px;
+                width: auto;
+                animation: coin 3s infinite;
+            }
+        }
+    }
+    .fish {
+        @include element("fish") {
+            @include modifier("01") {
+                right: 5%;
+                z-index: -1;
+                width: 220px;
+            }
+            @include modifier("02") {
+                bottom: 25%;
+                left: 7%;
+                z-index: -1;
+                width: 190px;
+            }
+        }
+        @include element("crab") {
+            bottom: -3%;
+            left: 5%;
+            z-index: -1;
+            width: 220px;
+            position: absolute;
+        }
+    }
+}
+
+@media screen and (max-width: 1999px) and (min-width: 1600px) {
+    body {
+        background: url(#{$url-assets}/images/bg/bg.jpg) center center no-repeat !important;
+        background-size: cover !important;
+    }
+    .logo {
+        width: 60%;
+        margin-top: 1%;
+    }
+    .button-download {
+        img {
+            width: 100%;
+            margin-top: -230px;
+            transition: 0.45s all ease-in;
+        }
+        @include element("ios") {
+            @include modifier("light") {
+                margin-left: 25%;
+                margin-top: -265px;
+                height: 105px;
+                width: 105px;
+                opacity: 1;
+            }
+            &:hover,
+            &:active,
+            &:focus {
+                .button-download__ios--light {
+                    opacity: 1;
+                    margin-left: 20%;
+                }
+            }
+        }
+        @include element("android") {
+            @include modifier("light") {
+                margin-left: 55%;
+                margin-top: -90px;
+                height: 70px;
+                width: 70px;
+                opacity: 1;
+            }
+            &:hover,
+            &:active,
+            &:focus {
+                .button-download__android--light {
+                    opacity: 1;
+                    margin-left: 57%;
+                }
+            }
+        }
+    }
+    .coin {
+        @include m("wrapper") {
+            position: absolute;
+            height: 130px;
+            width: auto;
+            z-index: 2;
+            @include element("001") {
+                left: 20%;
+                top: 5%;
+                animation: coin 3s infinite;
+            }
+            @include element("002") {
+                right: 35%;
+                top: 10%;
+                animation: coin 3s infinite;
+            }
+            @include element("002") {
+                right: 35%;
+                top: 10%;
+                animation: coin 3s infinite;
+            }
+            @include element("003") {
+                right: 15%;
+                top: -5%;
+                animation: coin 3s infinite;
+            }
+            @include element("004") {
+                left: 30%;
+                top: 45%;
+                height: 100px;
+                width: auto;
+                animation: coin 3s infinite;
+            }
+            @include element("005") {
+                right: 40%;
+                bottom: 5%;
+                height: 120px;
+                width: auto;
+                animation: coin 3s infinite;
+            }
+        }
+    }
+    .fish {
+        @include element("fish") {
+            @include modifier("01") {
+                right: 1%;
+                z-index: -1;
+                width: 380px;
+            }
+            @include modifier("02") {
+                bottom: 25%;
+                left: 5%;
+                z-index: -1;
+                width: 330px;
+            }
+        }
+        @include element("crab") {
+            bottom: -3%;
+            left: 1%;
+            z-index: -1;
+            width: 380px;
+            position: absolute;
+        }
+    }
+}
+
+@media screen and (min-width: 2000px) {
+    body {
+        background: url(#{$url-assets}/images/bg/bg.jpg) center center no-repeat !important;
+        background-size: cover !important;
+    }
+    .logo {
+        width: 65%;
+        margin-top: 1%;
+    }
+    .button-download {
+        img {
+            width: 100%;
+            margin-top: -230px;
+            transition: 0.45s all ease-in;
+        }
+        @include element("ios") {
+            @include modifier("light") {
+                margin-left: 25%;
+                margin-top: -265px;
+                height: 105px;
+                width: 105px;
+                opacity: 1;
+            }
+            &:hover,
+            &:active,
+            &:focus {
+                .button-download__ios--light {
+                    opacity: 1;
+                    margin-left: 20%;
+                }
+            }
+        }
+        @include element("android") {
+            @include modifier("light") {
+                margin-left: 55%;
+                margin-top: -90px;
+                height: 70px;
+                width: 70px;
+                opacity: 1;
+            }
+            &:hover,
+            &:active,
+            &:focus {
+                .button-download__android--light {
+                    opacity: 1;
+                    margin-left: 57%;
+                }
+            }
+        }
+    }
+    .coin {
+        @include m("wrapper") {
+            position: absolute;
+            height: 130px;
+            width: auto;
+            z-index: 2;
+            @include element("001") {
+                left: 20%;
+                top: 5%;
+                animation: coin 3s infinite;
+            }
+            @include element("002") {
+                right: 35%;
+                top: 10%;
+                animation: coin 3s infinite;
+            }
+            @include element("002") {
+                right: 35%;
+                top: 10%;
+                animation: coin 3s infinite;
+            }
+            @include element("003") {
+                right: 15%;
+                top: -5%;
+                animation: coin 3s infinite;
+            }
+            @include element("004") {
+                left: 30%;
+                top: 45%;
+                height: 100px;
+                width: auto;
+                animation: coin 3s infinite;
+            }
+            @include element("005") {
+                right: 40%;
+                bottom: 5%;
+                height: 120px;
+                width: auto;
+                animation: coin 3s infinite;
+            }
+        }
+    }
+    .fish {
+        @include element("fish") {
+            @include modifier("01") {
+                right: 1%;
+                z-index: -1;
+                width: 380px;
+            }
+            @include modifier("02") {
+                bottom: 25%;
+                left: 5%;
+                z-index: -1;
+                width: 330px;
+            }
+        }
+        @include element("crab") {
+            bottom: -3%;
+            left: 1%;
+            z-index: -1;
+            width: 380px;
+            position: absolute;
+        }
+    }
+}
+
+@media screen and (min-width: 2001) and (max-width: 2500px) {
+    body {
+        background: url(#{$url-assets}/images/bg/bg.jpg) center center no-repeat !important;
+        background-size: cover !important;
+    }
+    .logo {
+        width: 55%;
+        margin-top: 1%;
+    }
+    .fish {
+        @include element("fish") {
+            @include modifier("01") {
+                right: 4%;
+                z-index: -1;
+                width: 480px;
+            }
+            @include modifier("02") {
+                bottom: 25%;
+                left: 5%;
+                z-index: -1;
+                width: 430px;
+            }
+        }
+        @include element("crab") {
+            bottom: -3%;
+            left: 1%;
+            z-index: -1;
+            width: 480px;
+            position: absolute;
+        }
+    }
+}
+
+@media screen and (min-width: 3000px) {
+    body {
+        background: url(#{$url-assets}/images/bg/bg.jpg) center center no-repeat !important;
+        background-size: cover !important;
+    }
+    .logo {
+        width: 60%;
+        margin-top: 1%;
+    }
+    .button-download {
+        img {
+            width: 100%;
+            margin-top: -230px;
+            transition: 0.45s all ease-in;
+        }
+        @include element("ios") {
+            @include modifier("light") {
+                margin-left: 25%;
+                margin-top: -265px;
+                height: 105px;
+                width: 105px;
+                opacity: 1;
+            }
+            &:hover,
+            &:active,
+            &:focus {
+                .button-download__ios--light {
+                    opacity: 1;
+                    margin-left: 20%;
+                }
+            }
+        }
+        @include element("android") {
+            @include modifier("light") {
+                margin-left: 55%;
+                margin-top: -90px;
+                height: 70px;
+                width: 70px;
+                opacity: 1;
+            }
+            &:hover,
+            &:active,
+            &:focus {
+                .button-download__android--light {
+                    opacity: 1;
+                    margin-left: 57%;
+                }
+            }
+        }
+    }
+    .coin {
+        @include m("wrapper") {
+            position: absolute;
+            height: 130px;
+            width: auto;
+            z-index: 2;
+            @include element("001") {
+                left: 20%;
+                top: 5%;
+                animation: coin 3s infinite;
+            }
+            @include element("002") {
+                right: 35%;
+                top: 10%;
+                animation: coin 3s infinite;
+            }
+            @include element("002") {
+                right: 35%;
+                top: 10%;
+                animation: coin 3s infinite;
+            }
+            @include element("003") {
+                right: 15%;
+                top: -5%;
+                animation: coin 3s infinite;
+            }
+            @include element("004") {
+                left: 30%;
+                top: 45%;
+                height: 100px;
+                width: auto;
+                animation: coin 3s infinite;
+            }
+            @include element("005") {
+                right: 40%;
+                bottom: 5%;
+                height: 120px;
+                width: auto;
+                animation: coin 3s infinite;
+            }
+        }
+    }
+    .fish {
+        @include element("fish") {
+            @include modifier("01") {
+                right: 1%;
+                z-index: -1;
+                width: 380px;
+            }
+            @include modifier("02") {
+                bottom: 25%;
+                left: 5%;
+                z-index: -1;
+                width: 330px;
+            }
+        }
+        @include element("crab") {
+            bottom: -3%;
+            left: 1%;
+            z-index: -1;
+            width: 380px;
+            position: absolute;
+        }
+    }
+}

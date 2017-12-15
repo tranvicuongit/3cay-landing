@@ -1,0 +1,42 @@
+.coin{
+    @include m("wrapper"){
+        position: absolute;
+        height: 130px;
+        width: auto;
+        z-index: 2;
+        @include element("001"){
+            left: 20%;
+            top: 5%;
+            animation: coin 3s infinite;
+        }
+        @include element("002"){
+            right: 35%;
+            top: 10%;
+            animation: coin 3s infinite;
+        }
+        @include element("002"){
+            right: 35%;
+            top: 10%;
+            animation: coin 3s infinite;
+        }
+        @include element("003"){
+            right: 15%;
+            top: -5%;
+            animation: coin 3s infinite;
+        }
+        @include element("004"){
+            left: 30%;
+            top: 45%;
+            height: 100px;
+            width: auto;
+            animation: coin 3s infinite;
+        }
+        @include element("005"){
+            right: 40%;
+            bottom: 5%;
+            height: 120px;
+            width: auto;
+            animation: coin 3s infinite;
+        }
+    }
+}

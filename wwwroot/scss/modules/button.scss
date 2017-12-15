@@ -1,0 +1,109 @@
+.button-download {
+    margin-top: -10px;
+    z-index: 2;
+    img {
+        width: 70%;
+        margin-top: -140px;
+        transition: 0.45s all ease-in;
+    }
+    @include element("android") {
+        img {
+            float: right;
+        }
+        &:hover {
+            .button-download__android--light {
+                opacity: 1;
+                margin-left: 67%;
+                //transform: scaleY(1);
+            }
+        }
+        @include modifier("light") {
+            content: "";
+            background: url(#{$url-assets}/images/bg/btn-light-hover.png) center center no-repeat;
+            background-size: contain;
+            position: absolute;
+            margin-left: 72%;
+            margin-top: -50px;
+            height: 60px;
+            width: 60px;
+            pointer-events: none;
+            opacity: 0;
+            transition: opacity 0.23s ease-in;
+            transition: margin 0.45s ease-in;
+        }
+    }
+    @include element("ios") {
+        img {
+            float: left;
+        }
+        &:hover {
+            .button-download__ios--light {
+                opacity: 1;
+                margin-left: 15%;
+                //transform: scaleY(1);
+            }
+        }
+        @include modifier("light") {
+            content: "";
+            background: url(#{$url-assets}/images/bg/btn-light-hover.png) center center no-repeat;
+            background-size: contain;
+            position: absolute;
+            margin-left: 10%;
+            margin-top: -165px;
+            height: 60px;
+            width: 60px;
+            pointer-events: none;
+            opacity: 0;
+            transition: opacity 0.23s ease-in;
+            transition: margin 0.45s ease-in;
+        }
+    }
+    &:hover {
+        img {
+            transform: scale(1.01);
+        }
+    }
+}
+
+.tablet{
+    .button-download {
+        img {
+            width: 100%;
+            margin-top: -100px;
+            transition: 0.45s all ease-in;
+        }
+        @include element("ios") {
+            @include modifier("light") {
+                content: "";
+                background-size: contain;
+                position: absolute;
+                margin-left: -70%;
+                margin-top: -125px;
+                height: 70px;
+                width: 70px;
+                pointer-events: none;
+                opacity: 1;
+            }
+            &:hover, &:active, &:focus{
+                .button-download__ios--light {
+                    opacity: 1;
+                    margin-left: -72%;
+                }
+            }
+        }
+
+        @include element("android") {            
+            @include modifier("light") {
+                content: "";
+                background-size: contain;
+                position: absolute;
+                margin-left: 55%;
+                margin-top: 20px;
+                height: 70px;
+                width: 70px;
+                pointer-events: none;
+                opacity: 1;
+            }
+        }
+    }    
+}

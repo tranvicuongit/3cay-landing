@@ -1,0 +1,42 @@
+/** Import variable  **/
+@import './variables/_variable';
+
+/** Import mixin  **/
+@import './mixin/mixin';
+
+
+/** Import box  **/
+@import './modules/animation';
+@import './modules/button';
+@import './modules/coin';
+@import './modules/fish';
+
+/** Import page  **/
+@import './page/_index';
+
+/** Import responsive  **/
+// @import './responsive/_header';
+
+/** Import layout  **/
+@import './layout/_master';
+// @import './layout/_header';
+// @import './layout/_footer';
+@import './layout/_responsive';
+
+/** Import partials  **/
+
+
+// body{
+//     display: block;
+
+//     @include element('element') {
+//         text-align: center;
+//     }
+
+//     @include modifier('modifier') {
+//         color: red;
+//         @include element('element') {
+//             text-align: left;
+//         }
+//     }
+// }
