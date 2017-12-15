@@ -65,45 +65,45 @@
     }
 }
 
-.tablet{
-    .button-download {
-        img {
-            width: 100%;
-            margin-top: -100px;
-            transition: 0.45s all ease-in;
-        }
-        @include element("ios") {
-            @include modifier("light") {
-                content: "";
-                background-size: contain;
-                position: absolute;
-                margin-left: -70%;
-                margin-top: -125px;
-                height: 70px;
-                width: 70px;
-                pointer-events: none;
-                opacity: 1;
-            }
-            &:hover, &:active, &:focus{
-                .button-download__ios--light {
-                    opacity: 1;
-                    margin-left: -72%;
-                }
-            }
-        }
+// .tablet{
+//     .button-download {
+//         img {
+//             width: 100%;
+//             margin-top: -100px;
+//             transition: 0.45s all ease-in;
+//         }
+//         @include element("ios") {
+//             @include modifier("light") {
+//                 content: "";
+//                 background-size: contain;
+//                 position: absolute;
+//                 margin-left: -70%;
+//                 margin-top: -125px;
+//                 height: 70px;
+//                 width: 70px;
+//                 pointer-events: none;
+//                 opacity: 1;
+//             }
+//             &:hover, &:active, &:focus{
+//                 .button-download__ios--light {
+//                     opacity: 1;
+//                     margin-left: -72%;
+//                 }
+//             }
+//         }
 
-        @include element("android") {            
-            @include modifier("light") {
-                content: "";
-                background-size: contain;
-                position: absolute;
-                margin-left: 55%;
-                margin-top: 20px;
-                height: 70px;
-                width: 70px;
-                pointer-events: none;
-                opacity: 1;
-            }
-        }
-    }    
-}
+//         @include element("android") {            
+//             @include modifier("light") {
+//                 content: "";
+//                 background-size: contain;
+//                 position: absolute;
+//                 margin-left: 55%;
+//                 margin-top: 20px;
+//                 height: 70px;
+//                 width: 70px;
+//                 pointer-events: none;
+//                 opacity: 1;
+//             }
+//         }
+//     }    
+// }

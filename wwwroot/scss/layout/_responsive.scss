@@ -976,7 +976,7 @@
         background-size: cover !important;
     }
     .logo {
-        width: 60%;
+        width: 50%;
         margin-top: 1%;
     }
     .button-download {
@@ -1047,9 +1047,9 @@
                 animation: coin 3s infinite;
             }
             @include element("004") {
-                left: 30%;
+                left: 20%;
                 top: 45%;
-                height: 100px;
+                height: 80px;
                 width: auto;
                 animation: coin 3s infinite;
             }
@@ -1065,7 +1065,7 @@
     .fish {
         @include element("fish") {
             @include modifier("01") {
-                right: 1%;
+                right: 10%;
                 z-index: -1;
                 width: 380px;
             }
@@ -1078,7 +1078,7 @@
         }
         @include element("crab") {
             bottom: -3%;
-            left: 1%;
+            left: 10%;
             z-index: -1;
             width: 380px;
             position: absolute;
